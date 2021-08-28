@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.box{
+    width: 100%; /*para se adptar ao tamanho de todas as telas*/
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 20px 0;
+    border: 3px solid rgb(153, 151, 151);
+}
+
+.img-box{
+    width: 25%; /*33.33% pq vai dividir porque vao ser 4 imagens em um espaço só*/
+    padding-top: calc(25% / 2); /*se categoriza como altura da img-box (onde vai a imagem)*/
+    float: left;
+    position: relative;
+    border: 3px solid rgb(196, 194, 194)
+
+}
+
+.img{
+    position: absolute; /*absolute em relação ao img-box*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url(img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}   

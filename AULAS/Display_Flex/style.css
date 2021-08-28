@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; /*INVERTE A ORDEM DAS LINHAS*/
+}
+
+article{
+    background-color: grey;
+    padding: 22px 20px;
+}
+
+aside{
+    padding: 20px 40px;
+    background-color: greenyellow;
+}
+
+.gradiente{
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(red, orange);
+}
