@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para quando for utilizar o padding*/
+    font-family: open sans;
+}
+
+html, body {
+    height: 100%;
+}
+
+.center { /*Caixa geral do site, onde os conteudos ficam dentro*/
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: #7A46A6;
+}
+
+.header img {
+    margin: 2px;
+}
+
+.container-banner {
+    width: 100%;
+    padding: 0 2%;
+    height: 560px;
+    background-image: url(images/header_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center { /*Quer dizer, que todos elementos q estejam dentro da div de class=center filho da div class=container-banner tenham 100% de altura*/
+    height: 100%;
+}
+
+.form {
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 30px);
+    float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid rgba(120,120,120, 0.5);
+    background-clip: padding-box; /*Para conseguir aplicar transparencia nas bordas, da parte interna das bordas para dentro*/
+    /*background-origin tem o mesmo conceito do backgroun-clip, só que para imagens*/
+    background-color: white;
+}
+
+.form h2{
+    font-weight: normal;
+    color: #999999;
+    font-size: 21px;
+}
+
+.input-container{ /*divs dentro do form*/
+    margin-top: 20px;
+}
+.input-container span {/*Escritas em cima das caixas de input*/
+    display: inline-block;
+    width: 100%; /*Necessario 100% para fazer o input ir para a linha de baixo*/
+    color: #BBBBBB;
+    font-size: 17px;
+}
+
+.input-container input[type=text]{ /*Caixas de input*/
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+.form p { /*Escrita de "campos obrigatorios"*/
+    display: inline-block;
+    width: 100%; /*Necessario 100% para fazer o input ir para a linha de baixo*/
+    color: #BBBBBB;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.form .input-submit-container{
+    text-align: center;
+}
+
+.form input[type=submit]{
+    color: white;
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    background-color: #552f74;
+    border-bottom: 5px solid #7A46A6;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+    background-color: #3d2153;
+}
+
+.container-list{ /*Retangulo de apresentação(lista)*/
+    width: 519px;
+    height: 270px;
+    margin-top: 100px;
+    padding: 30px;
+    float: left;
+    background-color: rgba(61, 33, 83, 0.7);
+}
+
+.container-list ul{
+    list-style: inside; /*Para a lista ficar dentro da box*/
+}
+
+.container-list ul li{
+    color: white;
+    margin-top: 20px;
+}
+
+.container2{
+    padding: 50px 2%;
+    background-color: #ddd;
+    text-align: center;
+ }
+
+.container2 p{
+    width: 100%;
+    max-width: 768px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow{
+    position: relative;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+    background-size: 100%; /*se nao a imagem fica com cortes nela se nao aplicar isso*/
+    background-image: url(images/arrow.png);
+    left: 50%;
+    margin-left: -20px; /*usar isso pq o nosso objetivo esta com relação ao canto superior e esquerda*/
+}
+
+.title-container3{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.container3{
+	padding:90px 2%;
+}
+
+.container-section{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.div-container3{
+    padding: 30px;
+    float: left;
+    width: 33.333%;
+}
+
+.div-container3 p{
+    padding: 65px 2%;
+    text-align: justify;
+}
+
+.footer{
+    border-top: 2px solid #888888;
+    text-align: center;
+    color: silver;
+    padding: 30px 0;
+}
+
+.footer p{
+    margin-top: 8px;
+}
+
+
+.clear{
+    clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+	}
+
+    .header img{
+        margin: 0;
+    }
+
+    .container-list{
+        padding: 30px 0;
+        width: 40%;
+        float: left;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .container-banner{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        padding: 10px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+
+    .input-container input[type=text]{
+        width: 100%;
+        height: 55px;
+    }
+
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+	.container-2{
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+	.container-list{
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 90%;
+		margin-top:30px;
+	}
+
+	.div-container3{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding:30px 0;
+	}
+}
