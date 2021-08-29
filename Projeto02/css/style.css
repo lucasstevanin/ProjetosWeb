@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*DIVS PRINCIPAIS*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/*************************/
+
+/*HEADER*/
+header{
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px 2%;
+}
+
+.logo1{
+    float: left;
+    width: 150px;
+    height: 80px;
+    background-image: url(../images/montanhas_logo_branco.png);
+    background-size: 115% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.logo2{
+    float: right;
+    width: 150px;
+    height: 80px;
+    background-image: url(../images/montanhas_logo_azul.png);
+    background-size: 115% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width: 510px) {
+    header{
+        text-align: center;
+    }
+
+    .logo1, .logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
+/******************************************************************/
+
+/*FORMULARIO E BACKGROUND*/
+section.bg-form{
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/pexels-tom-swinnen-934718.jpg);
+}
+
+.form-container{
+    width: 400px;
+    height: 105%;
+    right: 30px;
+    top: -2.5%;   
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 0px 2px 0.5px rgb(202, 202, 202);
+    background-color: rgb(104, 168, 190);
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 20px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(1, 198, 190, 0.55);
+}
+
+.form-container form{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 16px;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 30px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(1, 198, 190, 0.55);
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    margin-top: 15px;
+}
+
+.obrigatorio{
+    margin: 25px 0px 10px 15px;
+}
+
+/***************************************************************/
+
+/*TEXTO APRESENTAÇÃO*/
+section.text_apresentation{
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    border-top: 3px solid white;
+}
+
+section.text_apresentation .container{
+    padding: 50px 0;
+    background-color: #8a534d;
+}
+
+section.text_apresentation h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+section.text_apresentation p{
+    width: 98%;
+	max-width: 700px;
+	display: inline-block;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+
+}
+
+@media screen and (max-width: 960px){
+    .bg{
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+}
+/****************************************************************/
+
+/*MOSAICO*/
+
+.flex_mosaico{
+    display: flex;
+    border-top: 3px solid white;
+}
+
+.img_mosaico{
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    
+}
+
+.txt_mosaico{
+    background-color: #30B9BE;
+    text-align: justify;
+    width: 40%;
+    padding: 90px 40px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .flex_mosaico{
+        display: block;
+    }
+
+    .img_mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .txt_mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+/****************************************************************/
+
+/*RODAPÉ*/
+
+footer{
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+footer img{
+    width: 150px;
+    margin: -30px;
+}
