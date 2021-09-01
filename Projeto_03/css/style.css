@@ -318,6 +318,12 @@ section.sessao4{
     float: left;
 }
 
+.entre-em-contato h2, p{
+    max-width: 480px;
+    padding-bottom: 12px;
+    text-align: justify;
+}
+
 .entre-em-contato form input[type=text]{
     width: 100%;
     max-width: 480px;
@@ -330,14 +336,79 @@ section.sessao4{
 
 .entre-em-contato form textarea{
     width: 100%;
+    height: 160px;
     max-width: 480px;
-
+    margin-top: 5px;
     padding-left: 8px;
-    line-height: 58px;
+    line-height: 50px;
+    resize: none;
     border: 1px solid rgb(230,230,230);
 }
 
+.entre-em-contato form input[type=submit]{
+    width: 165px;
+    height: 44px;
+    color: white;
+    background-color:#0A0A42;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 18px;
+}
+
+.map-wraper{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.map-wraper h2{
+    font-size: 23px;
+}
+
+.map-wraper2{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.map-wraper3{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100%;
+}
+
+.map{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 3px solid grey;
+}
+
 /*MEDIAS QUERIES*/
+
+@media screen and (max-width: 830px) {
+    
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 150px 0;
+    }
+
+    .chamada1 p{
+        text-align: justify;
+        margin: 0 150px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     
@@ -390,6 +461,10 @@ section.sessao4{
         display: inline-block;
     }
 
+    .texto-sessao1 p{
+        text-align: center;
+    }
+
     .texto-sessao1 ul{
         display: inline-block;
         margin-top:20px;
@@ -410,5 +485,67 @@ section.sessao4{
 
     .sessao2{
         padding-top: 40px;
+    }
+
+    .sessao3 h2, p{
+        padding: 0 10px;
+    }
+
+    section.sessao4 .container{
+        text-align: center;
+    }
+
+    .entre-em-contato{
+        float: none;
+        width: 100%;
+    }
+
+    .entre-em-contato p{
+        display: inline-block;
+        float: none;
+    }
+
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding: 0 8px;
+        margin-top: 40px;
+    }
+
+    .map-wraper2{
+        margin-top: 10px;
+        width: 100%;
+        padding-top: 100%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+
+    .map-wraper3{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (max-width:580px){
+    
+    .parte1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .parte2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .sessao2 img{
+        top: 16px;
+        margin-top: 20px;
     }
 }
