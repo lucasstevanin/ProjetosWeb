@@ -1,0 +1,45 @@
+.clear{
+    clear: both;
+}
+
+.cartao{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(/Cartao_de_Visita/images/backgorund.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+.cartao h1{
+    padding: 30px 0 30px 50px;
+    font-size: 40px;
+}
+
+.cartao a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.cartao ul{
+    padding: 20px 0 10px 50px;
+    list-style: none;
+}
+
+.cartao ul li{
+    padding-bottom: 30px;
+}
+
+.insta{
+    list-style: inside url(/Cartao_de_Visita/images/Insta.png);
+}
+
+.twitter{
+    list-style: inside url(/Cartao_de_Visita/images/Twitter.png);
+}
+
+.ytb{
+    list-style: inside url(/Cartao_de_Visita/images/Youtube.png);
+}
