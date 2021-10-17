@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 8px; 
+}
+
+.title{
+    font-size: 26px;
+}
+
+section{
+    padding: 20px;
+    background-image: url(../images/people.jpg);
+    background-size: cover; /*para a imagem cobrir todo o espaço*/
+    overflow: hidden; /*usar para reconhecer o espaço de elementos flutuantes (quando se usa float)*/
+}
+
+.form_container{
+    max-width: 280px;
+    padding: 20px;
+    background-color: #FFFFFFBB;
+    float: right;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box; /*deixar o tamanho do select do mesmo tamanho do input*/
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bolder;
+}
+
+/*APLICANDO NOSSO PRÓPRIO ESTILO AO "select", PARA MANTER PADRAO EM TODOS OS NAVEGADORES*/
+select{
+    -moz-appearance: none; /*firefox*/
+    -webkit-appearance: none; /*chrome, safari*/
+    appearance: none; /*todos outras versoes*/
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center;
+    /*background-position-x: calc(100% - 10px);
+    background-position-y: center;*/
+}
+
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+
+.description{
+    display: inline-block;
+    max-width: 40%;
+    color: white;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description h3, .description p{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 720px) {
+
+    section{
+        padding: 60px;
+    }
+    
+    .form_container{
+        max-width: 360px;
+        padding: 40px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .form_container h2{
+        font-size: 20px;
+    }
+    
+    .form_container p{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    input, select{
+        font-size: 14px;
+    }
+
+    input[type="submit"]{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .picture{
+        width: 180px;
+    }
+
+    .description{
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .description h3{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .description p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    
+    .description p{
+        text-align: justify;
+    }
+}
