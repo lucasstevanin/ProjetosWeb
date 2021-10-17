@@ -1,3 +1,3 @@
 # Projetos Web
 
-Projetos web iniciantes, feitos como exercícios de um curso.
+Projetos web iniciantes, feitos como exercícios de cursos.
