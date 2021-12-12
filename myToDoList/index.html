@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  
+  <body>
+
+    <div id="background_board">
+      
+      <div id="board">
+        <div id="input_btt_title">
+          <h3>My To Do List</h3>
+          <input type="text" id="text" placeholder="Add a task...">
+          <span id="add_button" onclick="newTask()">+</span>
+        </div>
+
+        <div id="mainBoard">
+          <ul id="myUL">
+            <li>Go To Market</li>
+            <li class="checked">Organize Office</li>
+            <li>Buy Soda</li>
+            <li>Read a book</li>
+          </ul>
+        </div><!--mainBoard-->
+        
+      </div> <!--board (grey)-->
+
+    </div><!--background_board(pink)-->
+    
+    
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
